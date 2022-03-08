@@ -1,0 +1,404 @@
+/* Every page on the website is structured inside a 'mainContainer' div, defined in mainStyle.css. The display for the element is set to flex, and each section is subsequently given an 'order' value to arrange them appropriately */
+
+#section1 {
+    position: relative;
+    max-width: inherit;
+    order: 0;
+    margin: 0px 0px;
+}
+
+
+/* every webpage also begins with a text greeting against a visual background. For the home page, it is a video background. For all the others, it is an image. */
+
+#vid1 {
+    width: 100%;
+}
+
+.largeTextContainer {
+    width: 100%;
+    position: absolute;
+    height: fit-content;
+    top: 35%;
+    transform: translateY(-65%);
+    margin: 0% 0% 0% 0%;
+    text-align: left;
+}
+
+.landText {
+    font-size: 2em;
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 0px 80px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    letter-spacing: .1em;
+}
+
+#section2 {
+    position: relative;
+    max-width: inherit;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#section2Left {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: calc(66% - 40px);
+    justify-content: space-between;
+    margin: 20px 20px 20px 40px;
+}
+
+#img2 {
+    width: calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    height: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    padding: 20px 40px;
+    filter: saturate(1.8) opacity(0.7);
+    order: 1;
+    flex-grow: 1;
+}
+
+.sec2Para {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px 0px;
+    margin: 0px 40px 10px 0px;
+    letter-spacing: 0.05em;
+    width: 100%;
+    padding: 0px 0px;
+    font-size: 1.3em;
+}
+
+#however {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    padding: 0px 0px;
+    width: 100%;
+    margin: -5px 40px 5px 0px;
+    letter-spacing: 0.1em;
+    padding: 0px 0px;
+    order: 1;
+}
+
+#homePara1 {
+    order: 0;
+}
+
+#homePara2 {
+    order: 2;
+}
+
+#homePara3 {
+    order: 3;
+}
+
+#section3 {
+    position: relative;
+    order: 2;
+    scroll-snap-align: start;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#img3 {
+    width: 100%;
+    filter: opacity(0.2);
+}
+
+#reasonText {
+    position: absolute;
+    top: 0%;
+    padding: 20px 160px 0px 160px;
+    width: calc(100% - 320px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sec3Para {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px 0px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.05em;
+    width: 100%;
+    padding: 0px 0px;
+    font-size: 1.3em;
+}
+
+#homePara4 {
+    order: 0
+}
+
+#homePara5 {
+    order: 1
+}
+
+#reasons {
+    order: 2;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    padding-bottom: 4px;
+}
+
+
+/* Although I was not able to implement media queries consistently through the website, I did try to implement it in some places, such as, for example, where the text gets hidden beyond a certain zoom level without a media query to account for overflow */
+
+@media only screen and (max-width: 1200px) {
+    #section3 {
+        order: 2;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #section3 {
+        order: 2;
+        overflow: scroll;
+    }
+    #img3 {
+        height: 0;
+    }
+    #reasonText {
+        position: relative;
+        margin: 0% 5%;
+        padding: 0px 0px;
+        width: 90%;
+    }
+}
+
+#section3a {
+    position: relative;
+    order: 3;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rotateImg {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    transform: rotateZ(0deg);
+}
+
+#rotateDiv {
+    order: 0;
+    width: 20%;
+    max-height: 100%;
+    margin: 40px 20px 40px 40px;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#rotateDiv:hover {
+    animation-name: example;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(1080deg);
+    }
+}
+
+#sec3aRight {
+    width: calc (80% - 160px);
+    order: 1;
+    margin: 20px 40px 20px 40px;
+    padding: 0px 0px;
+}
+
+#homePara6 {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    letter-spacing: 0.05em;
+    font-size: 1.3em;
+}
+
+#exploreList {
+    visibility: visible;
+    height: fit-content;
+}
+
+#section4 {
+    position: relative;
+    order: 4;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+#exploreText {
+    order: 1;
+    margin: 0px 40px 0px 40px;
+    font-size: 2em;
+    color: #ee5253;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+}
+
+#exploreText:hover {
+    text-shadow: -5px 5px 2px #f5dfdf;
+}
+
+#exploreBox {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px 40px 20px 40px;
+    padding-right: 0px;
+}
+
+.exim {
+    width: 25%;
+    padding: 0px 10px 0px 0px;
+}
+
+.eximImg {
+    width: 100%;
+    max-width: 100%;
+    filter: opacity(0.7) grayscale(0.2) blur(0) brightness(1) saturate(1);
+    border: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.exim:hover .eximImg {
+    filter: opacity(0.9) grayscale(0) blur(1px) brightness(0.6) saturate(2);
+}
+
+.exTex {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 80%;
+    margin-left: calc(10% - 5px);
+    margin-right: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.exihlink {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.exihlink::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+#pirLink::before {
+    background-color: #ff9f43;
+}
+
+#strLink::before {
+    background-color: #f368e0;
+}
+
+#acaLink::before {
+    background-color: #0abde3;
+}
+
+#wtdLink::before {
+    background-color: #1dd1a1;
+    ;
+}
+
+.exim:hover .exihlink::before {
+    transform: scaleX(1);
+}
+
+.exim:hover #pirLink {
+    color: #ff9f43;
+}
+
+.exim:hover #strLink {
+    color: #f368e0;
+}
+
+.exim:hover #acaLink {
+    color: #0abde3;
+}
+
+.exim:hover #wtdLink {
+    color: #1dd1a1;
+}
+
+#exploreList {
+    order: 3;
+    visibility: hidden;
+    height: 0;
+}
+
+#exploreList ul {
+    list-style-type: none;
+}
+
+#exploreList a {
+    text-decoration: none;
+}
+
+#pirExlist {
+    color: #ff9f43;
+}
+
+#strExList {
+    color: #f368e0;
+}
+
+#acaExList {
+    color: #0abde3;
+}
+
+#wtdExList {
+    color: #1dd1a1;
+}
+
+@media only screen and (max-width: 1080px) {
+    #exploreBox {
+        height: 0;
+        visibility: hidden;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    #exploreList {
+        visibility: visible;
+        height: fit-content;
+    }
+}
+
+#section5 {
+    position: relative;
+    order: 5;
+    margin: 0px 0px 20px 0px;
+}

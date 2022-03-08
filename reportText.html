@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Streaming & Piracy | What You Can Do</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='Stylesheets/mainStyle.css'>
+    <link rel='stylesheet' type="text/css" href="Stylesheets/whatToDo.css">
+
+    <link rel="icon" type="image/png" href="Images/Logos/earphoneLogo.png">
+    <style>
+        p,
+        h2,
+        ol {
+            margin: 40px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <div id="enableJS">
+        You must enable Javascript in order to use this site.
+        </div>
+    </noscript>
+    <!--This section contains the navigation bar-->
+
+    <div id="navContainer">
+
+        <h1 class="logo">
+            <a href="index.html"><img class="pageLogo" src="Images/Logos/earphoneLogo.png" alt="Earphones, Page Logo"> Streaming & Piracy</a>
+            <!-- Image by Freepik, available at: https://www.flaticon.com/free-icon/earphones_1079502?term=headphones&page=2&position=60 -->
+        </h1>
+        <!--div id="emptyNav"> </div-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="navItem" id="nav1"><img src="Images/Logos/home.png" class="navLogo" alt="Home">
+                            <p>Home</p>
+                        </div>
+                        <!-- Image by Vectors Market, available at: https://www.flaticon.com/free-icon/house_609803?term=home&page=1&position=1 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="piracy.html">
+                        <div class="navItem" id="nav2"><img src="Images/Logos/pirate.png" class="navLogo" alt="Piracy">
+                            <p>Piracy</p>
+                        </div>
+                        <!-- Image by Freepik, available at: https://www.flaticon.com/free-icon/pirate_1045266?term=piracy&page=1&position=11 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="streaming.html">
+                        <div class="navItem" id="nav3"><img src="Images/Logos/streaming.png" class="navLogo" alt="Streaming">
+                            <p>Streaming</p>
+                        </div>
+                        <!-- Image by Eucalyp, avaialable at: https://www.flaticon.com/free-icon/disc_1544629?term=music%20yellow&page=1&position=53 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="academia.html">
+                        <div class="navItem" id="nav4"><img src="Images/Logos/academia.png" class="navLogo" alt="Academia">
+                            <p>Academia</p>
+                        </div>
+                        <!-- Image by Zlatko Najdenovski, Available at: https://www.flaticon.com/free-icon/open-book_327116?term=book&page=1&position=36 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="whatToDo.html">
+                        <div class="navItem" id="nav5"><img src="Images/Logos/whatToDo.png" class="navLogo" alt="What you can do">
+                            <p>What you can do</p>
+                        </div>
+                        <!-- Image by Srip, available at: https://www.flaticon.com/free-icon/hammer_2092868?term=hammer%20nail&page=1&position=19 -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <img class="lineImg" src="Images/Logos/earphoneLogo.png">
+
+    <div id="mainContainer">
+        <div id="sec1">
+            <h2>Project Report</h2>
+            <p>In this commentary, I discuss the opportunities and challenges I faced in the creation of this multimedia project. I talk about the decisions I made regarding the content for the website, including the topics I wanted to discuss, and the balance
+                in between historical and futuristic perspectives. Furthermore, I explore the decisions regarding technical design, including how I structured the website, ensured that the visual aesthetic was appealing, and made the website interactive.</p>
+            <p> The topic I chose to address was the impact of the rise of music streaming services on digital music piracy. The studies I chose to address this topic are:</p>
+            <ol>
+                <li>Karla Borja, Suzanne Dieringer, Jesse Daw: The Effect of Music Streaming Services on Music Piracy Among College Students (2014).</li>
+                <li>Jonathan Dörr, Thomas Wagner, Thomas Hess, Alexander Benlian: Music as a Service as an Alternative to Music Piracy (2013)? </li>
+            </ol>
+            <p>I chose these particular studies for a few reasons. Both studies focused on similar sample audiences (young university students) and both were published during similar time-periods. More importantly, they both confirm that there is a positive
+                correlation between likelihood to pirate and likelihood of using streaming services but interpret this correlation differently. Dörr et al suggest that this means that streaming services provide an alternative to people that would otherwise
+                pirate music, whereas Borja et al suggest that streaming services influence people’s intention to engage in piracy.</p>
+            <p> I expect the target audience for this website to consist largely of people interested in the economics of musicians and the music industry, both at the micro and macro levels. The microeconomic perspective concerns the income of individual
+                musicians, the consumption patterns of different listeners, the royalties paid per stream, etc., while the macroeconomic economic perspective concerns general trends in the industry, which in this case refers to the amount of piracy and
+                the rise of streaming services, and the relation between the two. The expected target audience heavily influenced the implementation of this website. Since I expect most users to be generally curious about the music industry, I designed
+                the content to provide a general overview of music streaming and piracy, as well as a specific academic debate about the relation in between the two.</p>
+            <p>I adopted the AGILE project management principles and procedures for this project. The first stage was to define the high level requirements, which included informing users about the general history of music streaming and piracy, discussing
+                the academic debate regarding their relationship, and providing suggestions for how to support independent musicians. After having defined these high level requirements, I simultaneously engaged in the content and technical design for
+                each webpage, rather than finalizing the design and then implementing it. I integrated technical ideas that supported the content, tested these ideas, and often replaced them. One example of this involves the timeline on the streaming
+                page. Initially, I had designed this inside a container that I rotated with CSS, and every element within that container was rotated back into position. This approach did not require any JavaScript. However, I found that it came with lots
+                of bugs, and decided instead to implement a flex container that was horizontally extended off-screen.</p>
+            <h2>Content Design</h2>
+            <p>As previously discussed, I expect the target audience to be generally curious about the music industry. Hence, I decided that I would like to provide a more holistic view of the realms of music streaming and music piracy to engage users with
+                the general landscape of the subject. I dedicated a page each to the histories of piracy and streaming respectively, even including a timeline for the history of streaming. These pages are dedicated to telling a cohesive story of how modern
+                music piracy and streaming got where they are today. Hence, for the page on piracy, I begin with home-taping and CD-burning, and I discuss the evolution of piracy until the current landscape, with the popularity of peer-to-peer and other
+                file-sharing websites, as well as the rising threat of stream-ripping. I found that it was important to help the user disambiguate the ‘increase’ or ‘decrease’ in the popularity of a practise with a few critical questions.
+            </p>
+            <p>I dedicated one page to the comparison of the two papers and the academic debate around the topic. I decided that the quickest way to convey all the necessary information from both articles was to directly present the hypotheses and the subsequent
+                findings and conclusions from both studies. On that page, the concluding discussion specifically investigates the contrasting perspectives of the effects of music-streaming on piracy, with one suggesting that streaming services offer a
+                viable alternative to pirate, while the other suggests that streamers are more likely to be pirates themselves. Perhaps the most important page on the website is the one that suggests to users what they can actually do to support independent
+                musicians. For users that are curious about the general state of income for musicians, it was important to include suggestions that they could act upon.</p>
+            <h2> Technical Design</h2>
+            <p> I structured the website almost exclusively with CSS flex. I found that flex was very forgiving when it came to specificity about positioning, and the ability to structure both vertically and horizontally with just the ‘flex-direction’ attribute
+                of the container was a massive help. The primary structure was set inside a ‘main container’, which itself was a flex container. With the exception of the footer and the navigation bar, every element in the body was set inside a section
+                which was a segment of this main container. Sectioning each page like this not only helped provide the physical structure, but also a clear progression for the narrative of the webpage with each successive section. This is clearly visible
+                on the ‘what you can do’ webpage, for example. Each suggestion on the page is in a different section, and this divides the webpage effectively for both, visual and storytelling purposes.</p>
+            <p>In many places, there were flexboxes inside flexboxes inside flexboxes. The best example of this is the timeline on the streaming page, where the entire timeline is a flex container with smaller flex containers within itself. I extended this
+                container horizontally, such that most of it was off screen, and I incorporated horizontal scroll with a script I found on Stackoverflow (Nurrohman, 2013). </p>
+            <p>I chose the media on the website such that it would complement the text content. I thought it was important to make a memorable first impression on each page, which is why I adopted the format of a blurred image in the background with text
+                laid over it that encapsulated the content of the page. In the case of the home-page, I chose a blurred video instead for a more lively greeting. Most of the images on the website are decorative in nature, providing visual cues to text
+                elements. Some images directly provide information in the form of statistics as well. </p>
+            <p>One aspect of the technical design for the website which I found most enticing was incorporating interactivity. I considered the various ways in which people could interact with this website, and I considered how I would make the website react
+                to that interaction. I did this with two primary tools:</p>
+            <ol>
+                <li> CSS transitions: This was fundamental to making interaction with the website more fluid and natural. I used these transitions across the website. Some examples include the appearance of the greeting image on each page, the expansion and
+                    colouring of the buttons in the navigation bar, and the underlining of text in the page logo.</li>
+                <li> Animate on Scroll library: I considered scrolling to be the most fundamental interaction with this website. I found that this library introduced a lot of motion to the website, such that scrolling itself became interactive, and I incorporated
+                    it to make the webpages more lively and responsive, such that every element on the page appears on screen as the user scrolls to it. Besides this library, I also introduced other scrolling effects by calculating the percentage of the
+                    website that had been scrolled through and using that percentage to determine the rotation of the disk on the home page, and the leftward movement of the pirate ship on the piracy page.</li>
+            </ol>
+            <p> I tried to abide by the design principles of consistency, repetition, proximity, and alignment proposed by Robin Williams (2008).</p>
+            <ol>
+                <li>Contrast: I used contrasting fonts for headings and paragraphs (Poppins for headings, Titillium Web for paragraphs). I ensured that the text was visible against its background, which involved changing text color in the navigation bar,
+                    and blurring the greeting background images on each page (and on the home-page, the video) to make the text against it appear to be in the foreground. I varied the backgrounds of the different sections of each webpage. On the academia
+                    page, I brand one study as red and the other as blue to give them identity and distinguish them from each other.</li>
+                <li>Repetition: The website contains a universal navigation bar and footer. The fonts are repeated through the various headings and paragraphs on the website. The general scrolling aesthetic provided with the animate-on-scroll library helps
+                    to provide a consistent sense of movement across the website. The similar greeting image on each page provides for uniformity while switching in between pages.</li>
+                <li>Alignment: I ensured that the margins for text and images were aligned unless intentionally set to contrast. I tried to make the text that was laid over the greeting images align visually with the images themselves.</li>
+                <li>Proximity: Relevant items are placed closer together and are always easy to reach. The navigation bar is always nearby and can be accessed by hovering over the area. The green button on the bottom-left of the website helps users easily
+                    return to the top of the webpage. Text is always located in proximity to its relevant images and statistics.</li>
+            </ol>
+            <p>This project offered many opportunities and challenges for content and technical design. In this commentary, I discussed the various ways in which I addressed these challenges and opportunities.</p>
+
+        </div>
+    </div>
+    </div>
+    <div id="footerWrapper">
+        <div class="footerCell">
+            <p>
+                <a href="index.html">
+                    Home
+                </a>
+            </p>
+        </div>
+        <div class="footerCell">
+            <p>
+                <a href="reportText.html">
+                    Report
+                </a>
+            </p>
+        </div>
+        <div class="footerCell">
+            <p>
+                <a href="sources.html">
+            Sources
+            </a>
+            </p>
+        </div>
+    </div>
+    <script src="Scripts/mainScripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- for the chart, made with Google charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+
+</html>

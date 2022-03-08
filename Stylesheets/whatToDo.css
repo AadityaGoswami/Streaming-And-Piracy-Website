@@ -1,0 +1,127 @@
+#mainContainer {
+    scroll-snap-type: mandatory;
+}
+
+#sec1 {
+    order: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: -8px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+#img1 {
+    width: 100%;
+    transition: all 3.1s ease-out;
+    filter: opacity(0) grayscale(90%) blur(10px);
+}
+
+body.loaded #img1 {
+    filter: opacity(1) grayscale(0%) blur(0px) saturate(1);
+}
+
+#sec1p {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-60%);
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+    font-size: 1.5em;
+}
+
+#sec1p p {
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 100%;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.sec {
+    scroll-snap-align: start;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    filter: brightness(1);
+    transition: all 0.15s ease-in-out;
+}
+
+.sec:hover {
+    filter: brightness(1.1);
+}
+
+.secText {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 80px;
+}
+
+.secIm {
+    width: 40%;
+    margin: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secIm img {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.sec p {
+    font-size: 1.5em;
+    margin: 0px 40px 80px 40px;
+}
+
+.sec p a {
+    color: #d9d9d9;
+}
+
+.sec h2 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+    margin-left: 40px;
+    width: 80%;
+    margin-top: 0px;
+}
+
+.s0 {
+    background-color: #8854d0;
+}
+
+.s1 {
+    background-color: #2d98da;
+}
+
+.s2 {
+    background-color: #0fb9b1;
+}
+
+.s3 {
+    background-color: #20bf6b;
+}
+
+.s4 {
+    background-color: #f7b731;
+}
+
+.s5 {
+    background-color: #fa8231;
+}
+
+.s6 {
+    background-color: #eb3b5a;
+}

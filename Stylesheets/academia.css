@@ -1,0 +1,205 @@
+#sec1 {
+    order: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+#img1 {
+    width: 100%;
+}
+
+body.loaded #img1 {
+    filter: opacity(1) grayscale(0%) blur(0px) saturate(1);
+}
+
+#sec1p {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-60%);
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+    font-size: 1.5em;
+}
+
+#sec1p p {
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 100%;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+#sec2 {
+    order: 1;
+    display: flex;
+}
+
+#sec2 a {
+    width: 50%;
+    text-decoration: none;
+}
+
+.studyBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    height: 400px;
+    color: white;
+}
+
+.studyBox:hover {
+    filter: brightness(1.1);
+}
+
+.studyBox h2 {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.studyBox p {
+    font-size: 1.2em;
+    margin-left: 40px;
+}
+
+#boxA {
+    background-color: #4834d4;
+}
+
+#boxB {
+    background-color: #eb4d4b;
+}
+
+#sec3 {
+    order: 2;
+}
+
+#sec3 h2 {
+    font-size: 4em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: 40px;
+    color: #686de0;
+}
+
+#reasonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.reasonText h3 {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    color: #30336b;
+}
+
+.reasonText p {
+    font-size: 1.3em;
+}
+
+.reason {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.reasonText {
+    width: 70%;
+    margin-left: 40px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.reasonLogo {
+    width: 30%;
+    margin: 40px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reasonLogo img {
+    width: 80%;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 0%;
+}
+
+#sec4 {
+    order: 3;
+    background-color: #4834d4;
+    color: white;
+    margin-top: 40px;
+}
+
+#sec4 h2 {
+    font-size: 4em;
+    margin: 20px 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+#sec4 p {
+    font-size: 1.2em;
+    margin: 20px 40px 40px 40px;
+}
+
+#sec4 ol {
+    margin-left: 40px;
+    font-size: 1.2em;
+}
+
+#sec5 {
+    order: 4;
+    background-color: #eb4d4b;
+    color: white;
+    margin-top: 0px;
+}
+
+#sec5 h2 {
+    font-size: 4em;
+    margin: 20px 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+#sec5 p {
+    font-size: 1.2em;
+    margin: 20px 40px 40px 40px;
+}
+
+#sec5 ol {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 1.2em;
+}
+
+#sec6 {
+    order: 5;
+    margin-bottom: 80px;
+}
+
+#sec6 p {
+    width: 80%;
+    margin: 40px 10% 0px 10%;
+    font-size: 1.2em;
+}
+
+#sec6 ol {
+    width: 80%;
+    margin: 20px 10%;
+    font-size: 1.2em;
+}
+
+#nextPageLink {
+    color: #10ac84;
+}

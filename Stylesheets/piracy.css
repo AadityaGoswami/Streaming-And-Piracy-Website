@@ -1,0 +1,219 @@
+#mainContainer p {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px 0px;
+    letter-spacing: 0.05em;
+}
+
+#sec1 {
+    order: 0;
+    position: relative;
+    width: 100%;
+}
+
+#sec1 img {
+    width: 100%;
+    transition: all 3.1s ease-out;
+    filter: opacity(0) grayscale(90%) blur(10px);
+}
+
+body.loaded #sec1 img {
+    filter: opacity(1) grayscale(0%) blur(0px) saturate(1) brightness(0.6);
+}
+
+#sec1p {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-55%);
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+    font-size: 1.5em;
+}
+
+#sec1p p {
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 100%;
+    letter-spacing: .1em;
+}
+
+#sec2 {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+}
+
+#sec2p {
+    order: 0;
+    margin: 0px 40px 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+#sec2img {
+    order: 1;
+    min-width: 33%;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#sec2img img {
+    width: 100%;
+}
+
+#sec3 {
+    order: 2;
+    margin-top: 20px;
+    display: flex;
+    font-size: 1.2em;
+}
+
+#sec3 p {
+    margin: 0px 40px;
+}
+
+#sec4 {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#shipDiv {
+    width: 20%;
+    padding: 10px 10px;
+    order: 0;
+}
+
+
+/* The ship is meant to move towards the left as we scroll down the page */
+
+#ship {
+    width: 60%;
+    float: right;
+    z-index: 1;
+}
+
+#sec4p {
+    order: 1;
+    width: 80%;
+    margin-right: 40px;
+    z-index: 0;
+}
+
+#sec5 {
+    order: 4;
+    position: relative;
+    font-size: 1.2em;
+}
+
+#sec5 img {
+    position: relative;
+    width: 100%;
+    filter: brightness(1);
+}
+
+#sec5 p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0px;
+    width: calc(100% - 160px);
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 2em;
+    text-align: center;
+}
+
+#sec6 {
+    order: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionText {
+    width: calc(50% - 40px);
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.questionH {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0em;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px;
+    order: 0;
+}
+
+.questionP {
+    font-size: 1.2em;
+    margin: 10px 0px 20px 0px;
+    order: 1;
+}
+
+.gifDiv {
+    order: 0;
+    width: 50%;
+    height: fit-content;
+    max-width: 50%;
+}
+
+.gifDiv img {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+#sec6q1 {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -8px;
+}
+
+#sec6q2 {
+    order: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: -6px;
+}
+
+#sec6q3 {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -6px;
+}
+
+#sec6q1 .questionH {
+    color: #ee5253;
+}
+
+#sec6q2 .questionH {
+    color: #f368e0;
+}
+
+#sec6q3 .questionH {
+    color: #10ac84;
+}
+
+#sec7 {
+    order: 6;
+}

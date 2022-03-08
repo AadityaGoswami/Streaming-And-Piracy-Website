@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // To trigger certain css transitions immediately as the page loads
+
+        window.onload = function() {
+            document.body.className += "loaded";
+        }
+    </script>
+    <title>Streaming & Piracy | Home</title>
+
+    <link rel='stylesheet' type='text/css' href='Stylesheets/mainStyle.css'>
+    <link rel='stylesheet' type="text/css" href="Stylesheets/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/Logos/earphoneLogo.png">
+</head>
+
+<body>
+    <!-- to make sure Javascript is enabled so the page can be viewed properly -->
+    <noscript>
+        <div id="enableJS">
+        You must enable Javascript in order to use this site.
+        </div>
+    </noscript>
+
+    <!--This section contains the navigation bar-->
+    <div id="navContainer">
+
+        <h1 class="logo">
+            <a href="#"><img class="pageLogo" src="Images/Logos/earphoneLogo.png" alt="Earphones, Page Logo" title="Home"> Streaming & Piracy</a>
+            <!-- Image by Freepik, available at: https://www.flaticon.com/free-icon/earphones_1079502?term=headphones&page=2&position=60 -->
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="navItem" id="nav1"><img src="Images/Logos/home.png" class="navLogo" alt="Home">
+                            <p>Home</p>
+                        </div>
+                        <!-- Image by Vectors Market, available at: https://www.flaticon.com/free-icon/house_609803?term=home&page=1&position=1 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="piracy.html">
+                        <div class="navItem" id="nav2"><img src="Images/Logos/pirate.png" class="navLogo" alt="Piracy">
+                            <p>Piracy</p>
+                        </div>
+                        <!-- Image by Freepik, available at: https://www.flaticon.com/free-icon/pirate_1045266?term=piracy&page=1&position=11 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="streaming.html">
+                        <div class="navItem" id="nav3"><img src="Images/Logos/streaming.png" class="navLogo" alt="Streaming">
+                            <p>Streaming</p>
+                        </div>
+                        <!-- Image by Eucalyp, avaialable at: https://www.flaticon.com/free-icon/disc_1544629?term=music%20yellow&page=1&position=53 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="academia.html">
+                        <div class="navItem" id="nav4"><img src="Images/Logos/academia.png" class="navLogo" alt="Academia">
+                            <p>Academia</p>
+                        </div>
+                        <!-- Image by Zlatko Najdenovski, Available at: https://www.flaticon.com/free-icon/open-book_327116?term=book&page=1&position=36 -->
+                    </a>
+                </li>
+                <li>
+                    <a href="whatToDo.html">
+                        <div class="navItem" id="nav5"><img src="Images/Logos/whatToDo.png" class="navLogo" alt="What you can do">
+                            <p>What you can do</p>
+                        </div>
+                        <!-- Image by Srip, available at: https://www.flaticon.com/free-icon/hammer_2092868?term=hammer%20nail&page=1&position=19 -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- both, the greyscale page logo, and the upwards pointing image, are made opaque once the user has scrolled. -->
+    <img class="lineImg" src="Images/Logos/earphoneLogo.png" alt="Earphones, page logo">
+    <div id="goup" class="upImg">
+        <a href="#section1">
+            <img src="Images/Logos/greencircle.png" alt="click to go up" title="click to go up">
+            <img id="uparrow" src="Images/Logos/up.png" alt="uparrow">
+        </a>
+    </div>
+    <!-- these are the main contents of the page. Each horizontal portion of the page (and all the other pages) is divided into sections mostly to order them in CSS using flexbox-->
+    <div id="mainContainer">
+
+        <div id="section1">
+            <video id="vid1" autoplay muted loop>
+                <source src="Videos/HomeGreet.mp4" type="video/mp4">
+                    <!-- Video sources: 
+                1. https://www.pexels.com/video/a-female-singer-with-her-band-4088868/
+                2. https://pixabay.com/videos/drum-concert-sound-band-music-man-5026/
+            3.https://pixabay.com/videos/turntable-music-playing-equipment-8437/
+            4. https://www.pexels.com/video/a-man-using-a-guitar-pick-to-play-an-electric-guitar-4088198/
+            5. https://pixabay.com/videos/vive-latino-concert-15804/
+            6. https://pixabay.com/videos/rotting-christ-rock-concert-band-1275/
+            7. https://www.pexels.com/video/woman-inside-a-car-using-her-phone-3048180/
+        -->
+                </video>
+
+
+
+            <div class="largeTextContainer">
+                <p class="landText" data-aos="fade-down" data-aos-duration="1700">As streaming services like Spotify,</p>
+                <p class="landText" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">Apple Music, and Amazon Music become</p>
+                <p class="landText" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">more popular, it is worth examining</p>
+                <p class="landText" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">the effect that they have had on piracy.
+                </p>
+            </div>
+
+            <!-- The AOS (animate on scroll) library is used throughout the website to make elements appear as you scroll through the website. This was an easy and effective way to make the website feel responsive and interactive. -->
+
+        </div>
+
+        <div id="section2">
+
+            <img src="Images/musician.jpg " id="img2" data-aos="fade-left" data-aos-duration="1600" alt="Guitarist" title="Image by Kaique Rocha">
+
+            <!-- Image by Kaique Rocha (https://www.instagram.com/hikaique/), available at: https://www.pexels.com/photo/adult-buildings-cars-city-379962/ -->
+
+            <div id="section2Left">
+
+                <p class="sec2Para" id="homePara1" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Musicians are often confronted with the idea that it is very difficult to make money in the profession. One of the ways in which they do get paid is through people paying to download their music.</p>
+
+                <p id="however" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-once="false">However...</p>
+
+                <p class="sec2Para" id="homePara2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">The easy and untethered spread of digital media in the present age has made it such that it is disconcertingly easy to copy, distribute, and download this music for free.</p>
+
+                <p class="sec2Para" id="homePara3" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">The act of copying digital goods for any reason other than backup, without permission from the original copyright holder, is known as digital piracy.
+                </p>
+
+                <!-- I used AOS duration and delay to make elements in a particular section appear in sequence rather than together. -->
+
+            </div>
+
+        </div>
+
+        <div id="section3">
+
+            <img src="Images/turntable.jpg" id="img3" data-aos="fade-up" data-aos-duration="600" alt="Turntable,  background" title="Image by andreas160578">
+
+            <!-- Image by andreas160578, available at: https://pixabay.com/photos/turntable-s-record-players-hub-2157292/ -->
+
+            <div id="reasonText">
+
+                <p class="sec3Para" id="homePara4" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">The rise of digital piracy took away a viable source of income from musicians. However, music streaming services present an affordable and convenient option for consumers to move away from pirating music, in theory at least.</p>
+
+                <p class="sec3Para" id="homePara5" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
+                    Streaming services are not free of flaws. They are often criticised for not paying artists enough. Still, they are a preferable alternative to pirating music for a few reasons:</p>
+
+                <ol id="reasons">
+
+                    <li data-aos="fade-right" data-aos-duration="600">Even if streaming services do not pay artists enough, it is preferable to not paying them at all.</li>
+                    <li data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">Artists have more control over what music is available and how it is presented.</li>
+                    <li data-aos="fade-right" data-aos-duration="600" data-aos-delay="200">As streaming services make recommendations to users based on their tastes, it is a fantastic way for artists to make themselves known to audiences.</li>
+                    <li data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">Most artists voluntarily put their music on streaming platforms, as opposed to having it uploaded by third parties to places where it can freely be downloaded.</li>
+                    <li data-aos="fade-right" data-aos-duration="600" data-aos-delay="400">On some services, artists can advertise concerts and merchandise, further helping them make money through the audiences that they reach.</li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+        <div id="section3a">
+
+            <div id="rotateDiv" data-aos="fade-in" data-aos-duration="600">
+                <img id="rotateImg" src="Images/Logos/disk.png" alt="Disc, rotating image">
+
+                <!-- Image by Freepik, available at: https://www.flaticon.com/free-icon/compact-disk_1687561?term=CD&page=1&position=9 -->
+
+            </div>
+
+            <!-- the image of the disk rotates as we scroll through the page by obtaining the percentage of the page that has been scrolled through (multiplied by 10 for exaggerated effect) and rotating the image around the z-axis by those many degrees with {transform: rotateZ();} in css. This is executed in the amountscrolled() function in indexscroll.js -->
+
+            <div id="sec3aRight">
+
+                <p id="homePara6" data-aos="fade-in" data-aos-duration="800">There are conflicting views and findings on the impact of streaming services on piracy. This website aims to inform you about these impacts, as well as what else you can do to support your favourite musicians.</p>
+
+            </div>
+        </div>
+
+        <div id="section4">
+
+            <p id="exploreText" data-aos="fade-right" data-aos-duration="300">EXPLORE &rarr;</p>
+
+
+            <div id="exploreBox">
+
+                <div class="exim" data-aos="fade-up" data-aos-duration="600">
+                    <a class="exLink" href="piracy.html">
+                        <img class="eximImg" src="Images/Explore/explorePiracy.jpg" alt="Piracy">
+                        <div class="exTex">
+                            <h2 class="exihlink" id="pirLink">Piracy</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Image by freephotocc, available at: https://pixabay.com/photos/notebook-laptop-macbook-conceptual-1280538/ -->
+
+                <div class="exim" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <a href="streaming.html" class="exLink">
+                        <img class="eximImg" src="Images/Explore/exploreStreaming.jpg" alt="Streaming">
+                        <div class="exTex">
+                            <h2 class="exihlink" id="strLink">Streaming</h2>
+                        </div>
+                    </a>
+                </div>
+                <!-- Image by StockSnap, available at: https://pixabay.com/photos/people-man-guy-travel-city-black-2583444/ -->
+
+                <div class="exim" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <a href="academia.html" class="exLink">
+                        <img class="eximImg" src="Images/Explore/exploreAcademia.jpg" alt="Academia">
+                        <div class="exTex">
+                            <h2 class="exihlink" id="acaLink">Academia</h2>
+                        </div>
+                    </a>
+                </div>
+                <!-- Image by Free-Photos, available at: https://pixabay.com/photos/bookshelf-old-library-old-books-1082309/ -->
+
+                <div class="exim" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <a href="whatToDo.html" class="exLink">
+                        <img class="eximImg" src="Images/Explore/exploreWhatToDo.jpg" alt="What you can do">
+                        <div class="exTex">
+                            <h2 class="exihlink" id="wtdLink">What You Can Do</h2>
+                        </div>
+                    </a>
+                </div>
+                <!-- Image by ejaugsburg, available at: https://pixabay.com/photos/guitar-case-street-musicians-donate-485112/ -->
+
+            </div>
+
+            <div id="exploreList">
+                <ul>
+                    <li>
+                        <a href="piracy.html" id="pirExlist">Piracy</a>
+                    </li>
+                    <li>
+                        <a href="streaming.html" id="strExlist">Streaming</a>
+                    </li>
+                    <li>
+                        <a href="academia.html" id="acaExList">Academia</a>
+                    </li>
+                    <li>
+                        <a href="whatToDo.html" id="wtdExList">What you can do</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footerWrapper">
+        <div class="footerCell">
+            <p>
+                <a href="index.html">
+                    Home
+                </a>
+            </p>
+        </div>
+        <div class="footerCell">
+            <p>
+                <a href="reportText.html">
+                    Report
+                </a>
+            </p>
+        </div>
+        <div class="footerCell">
+            <p>
+                <a href="sources.html">
+            Sources
+            </a>
+            </p>
+        </div>
+    </div>
+    <script src="Scripts/indexScroll.js"></script>
+    <!-- To initialize that Animate on Scroll script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

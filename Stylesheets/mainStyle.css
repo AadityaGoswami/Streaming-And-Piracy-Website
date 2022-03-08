@@ -1,0 +1,504 @@
+/* The stylesheet contains elements applied across the website, including the navigation bar, footer, and some main container elements. */
+
+
+/* Various fonts used through the webpage */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* The background color is set to a color slightly darker than white to bring focus to the main container */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #d9d9d9;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+
+/* The website requires Javascript to be emabled, and this element is only visible if JS is disabled */
+
+#enableJS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    font-family: 'Tittilium Web', sans-serif;
+    font-size: 2em;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* This section contains the navigation bar */
+
+#navContainer {
+    width: calc(100% - 40px);
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    height: 38px;
+    background-color: white;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    resize: none;
+    margin: 0px 20px 0px 20px;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 2;
+}
+
+
+/* CSS transitions are helpful in spacing out various interactive movements, including clicks, hovers, and scrolls. This introduces some fluidity in the variou smoving parts across the website. */
+
+.pageLogo {
+    height: 0.8em;
+    width: 0.8em;
+    margin-left: auto;
+    margin-right: 3px;
+    transition: all 0.4s ease-in-out;
+    flex: 1;
+}
+
+.logo {
+    float: left;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    order: 0;
+    align-self: flex-start;
+    flex-grow: 1;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+}
+
+.logo:hover {
+    text-shadow: -5px 2px 0px #f2f2f2;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+
+/* Pseudo elements are used throughout the website to create an underlining animation */
+
+.logo a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    text-shadow: none;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.logo a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.logo:hover .pageLogo {
+    filter: drop-shadow( -5px 2px 0px #e6e6e6);
+}
+
+nav {
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin-right: 0px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+nav ul p {
+    position: relative;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+    nav ul p {
+        font-size: 0em;
+    }
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navItem {
+    background-color: white;
+    border-style: none solid;
+    border-color: #f2f2f2;
+    padding: 6px 16px;
+    margin: 0px -3px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    font-weight: 350;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.navItem:hover {
+    padding: 6px 18px;
+}
+
+.navLogo {
+    height: 1.25em;
+    width: 1.25em;
+    margin-left: auto;
+    margin-right: 3px;
+    transition: all 0.2s ease-in-out;
+    resize: none;
+}
+
+.navItem:hover>.navLogo {
+    margin-right: 4px;
+}
+
+
+/*color pallete for navigation items from https://flatuicolors.com/palette/ca
+*/
+
+body.loaded #nav1 {
+    animation-name: startR;
+    animation-duration: 0.6s;
+}
+
+@keyframes startR {
+    0% {
+        color: #ee5253;
+        background-color: white;
+    }
+    50% {
+        background-color: #ee5253;
+        color: white;
+    }
+    100% {
+        color: #ee5253;
+        background-color: white;
+    }
+}
+
+body.loaded #nav2 {
+    animation-name: startO;
+    animation-duration: 0.6s;
+    animation-delay: 0.06s;
+}
+
+@keyframes startO {
+    0% {
+        color: #ff9f43;
+        background-color: white;
+    }
+    50% {
+        background-color: #ff9f43;
+        color: white;
+    }
+    100% {
+        color: #ff9f43;
+        background-color: white;
+    }
+}
+
+body.loaded #nav3 {
+    animation-name: startP;
+    animation-duration: 0.6s;
+    animation-delay: 0.12s;
+}
+
+@keyframes startP {
+    0% {
+        color: #f368e0;
+        background-color: white;
+    }
+    50% {
+        background-color: #f368e0;
+        color: white;
+    }
+    100% {
+        color: #f368e0;
+        background-color: white;
+    }
+}
+
+body.loaded #nav4 {
+    animation-name: startB;
+    animation-duration: 0.6s;
+    animation-delay: 0.18s;
+}
+
+@keyframes startB {
+    0% {
+        color: #0abde3;
+        background-color: white;
+    }
+    50% {
+        background-color: #0abde3;
+        color: white;
+    }
+    100% {
+        color: #0abde3;
+        background-color: white;
+    }
+}
+
+body.loaded #nav5 {
+    animation-name: startG;
+    animation-duration: 0.6s;
+    animation-delay: 0.24s;
+}
+
+@keyframes startG {
+    0% {
+        color: #10ac84;
+        background-color: white;
+    }
+    50% {
+        background-color: #10ac84;
+        color: white;
+    }
+    100% {
+        color: #10ac84;
+        background-color: white;
+    }
+}
+
+#nav1 {
+    color: #ee5253;
+}
+
+#nav2 {
+    color: #ff9f43;
+}
+
+#nav3 {
+    color: #f368e0;
+}
+
+#nav4 {
+    color: #0abde3;
+}
+
+#nav5 {
+    color: #10ac84;
+}
+
+#nav1:hover {
+    background-color: #ee5253;
+    color: white;
+}
+
+#nav2:hover {
+    background-color: #ff9f43;
+    color: white;
+}
+
+#nav3:hover {
+    background-color: #f368e0;
+    color: white;
+}
+
+#nav4:hover {
+    background-color: #0abde3;
+    color: white;
+}
+
+#nav5:hover {
+    background-color: #10ac84;
+    color: white;
+}
+
+
+/*Although I wanted to keep a fixed nav bar, I found that it was often interruptive and clashes with elements on screen. I decided to make it transparent and make it reappear in hovering over, with the logo on the side as cue for users*/
+
+.scrolledNav {
+    opacity: 0;
+}
+
+.scrolledNav:hover {
+    opacity: 1;
+}
+
+.lineImg {
+    position: fixed;
+    left: 30px;
+    top: 8px;
+    z-index: 1;
+    opacity: 1;
+    height: 1.2em;
+    filter: grayscale(0);
+    transition: all 1s ease-in-out;
+}
+
+.scrolledNav~.lineImg {
+    opacity: 1;
+    filter: grayscale(1);
+}
+
+.scrolledNav:hover~.lineImg {
+    opacity: 1;
+}
+
+
+/* The upwards arrow at the bottom right is also made visible only on scroll, to help users get back to the top of the page with ease */
+
+.upImg {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    z-index: 2;
+    opacity: 0;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+}
+
+.scrolledupimg {
+    opacity: 0.6;
+}
+
+.upImg:hover {
+    opacity: 1;
+}
+
+.upImg img {
+    max-width: 80%;
+    width: 80%;
+    margin: 10% 10%;
+    position: absolute;
+    z-index: 0;
+}
+
+#uparrow {
+    position: absolute;
+    z-index: 1;
+    width: 46%;
+    margin: 35% 27%;
+}
+
+.scrolledupimg:hover #uparrow {
+    animation-name: wiggleup;
+    animation-duration: 0.6s;
+}
+
+@keyframes wiggleup {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* end of navigation bar and fixed elements*/
+
+
+/* Main Container */
+
+#mainContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 38px;
+    margin-bottom: 10px;
+    height: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+    #mainContainer {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+/* Footer */
+
+#footerWrapper {
+    width: 100%;
+    max-width: 100%;
+    background-color: #001a33;
+    color: white;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footerCell {
+    position: relative;
+    padding: 0 0;
+    margin: 0 16%;
+}
+
+.footerCell p {
+    margin: 0 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footerCell a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerCell a:hover {
+    color: #55efc4;
+}

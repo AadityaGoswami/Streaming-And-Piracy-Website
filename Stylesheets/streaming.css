@@ -1,0 +1,277 @@
+#mainContainer {
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+#sec1 {
+    order: 0;
+    position: relative;
+    width: 100%;
+}
+
+#img1 {
+    width: 100%;
+    transition: all 3.1s ease-out;
+    filter: opacity(0) grayscale(90%) blur(10px);
+}
+
+body.loaded #sec1 img {
+    filter: opacity(1) grayscale(0%) blur(0px) saturate(1);
+}
+
+#sec1p {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-60%);
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 900px) {
+    #sec1p {
+        font-size: 0.8em;
+    }
+}
+
+#sec1p p {
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    max-width: 100%;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sec2 p {
+    margin: 20px 40px;
+    font-size: 1.2em;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px 0px;
+    letter-spacing: 0.05em;
+}
+
+.sec2imgR {
+    min-width: 33%;
+    display: flex;
+    margin: 20px 40px 20px 0px;
+    align-items: center;
+}
+
+.sec2imgR img {
+    width: 100%;
+}
+
+.sec2imgL {
+    min-width: 33%;
+    display: flex;
+    margin: 20px 0px 20px 40px;
+    align-items: center;
+}
+
+.sec2imgL img {
+    width: 100%;
+}
+
+#2a {
+    order: 1;
+}
+
+#2b {
+    order: 2;
+}
+
+#2c {
+    order: 3;
+}
+
+#2d {
+    order: 4;
+}
+
+#secStat {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#statL {
+    order: 0;
+    width: 66%;
+}
+
+#statR {
+    order: 1;
+    width: 33%;
+}
+
+#columnchart_values {
+    height: 100%;
+    margin-right: 40px;
+    max-width: 100%;
+}
+
+.arr p {
+    order: 5;
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #e74c3c;
+}
+
+#secTimeline {
+    order: 6;
+}
+
+#timeline {
+    height: 90vh;
+    background-color: #f0f3f4;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#timeline::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.tElement {
+    min-width: 25vw;
+    flex: 1;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rev {
+    flex-direction: column-reverse;
+}
+
+#cntrLine {
+    height: 2px;
+    width: calc(250vw + 100px);
+    background-color: #cacce7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.dot {
+    width: 4vh;
+    z-index: 2;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.1s ease-in-out;
+}
+
+.dotbg {
+    width: 5vh;
+    z-index: 1;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: opacity(0);
+    transition: all 0.1s ease-in-out;
+}
+
+.dot:hover {
+    filter: brightness(1.1);
+}
+
+.dot:hover~.dotbg {
+    filter: opacity(1) brightness(1.2);
+}
+
+.tText {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.tText h2 {
+    font-size: 1.5em;
+    color: #e74c3c;
+    max-width: 80%;
+    font-family: "Poppins", sans-serif;
+    flex: 1;
+    margin: 30px 10px 0px 10px;
+    line-height: 1.1em;
+}
+
+.tText h2 a {
+    text-decoration: none;
+    color: #e74c3c;
+    position: relative;
+}
+
+.tText a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e74c3c;
+    text-shadow: none;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2 s ease-in-out 0s;
+}
+
+.tText a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.tText p {
+    font-size: 1.1em;
+    margin: 10px 10px 20px 10px;
+    flex: 3;
+}
+
+.tEmpty {
+    height: 50%;
+    flex: 1;
+}
+
+.year {
+    position: absolute;
+    font-size: 2em;
+    align-self: center;
+    color: #4cd137;
+    z-index: 0;
+    top: calc(50% + 3vh);
+    transform: translateY(-50%) translateX(60px);
+}
+
+.rev .year {
+    top: calc(50% + -3vh);
+    transform: translateY(-50%) translateX(60px);
+}

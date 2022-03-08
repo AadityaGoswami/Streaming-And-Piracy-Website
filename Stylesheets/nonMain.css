@@ -1,0 +1,23 @@
+/* This is the stylesheet for the report and sources webpage */
+
+
+/* sources dropdown */
+
+h2 {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+    color: #30336b;
+}
+
+.sourceList {
+    margin-left: 40px;
+    width: 60%;
+    margin-top: 0px;
+    font-size: 1em;
+}
+
+p {
+    margin-left: 40px;
+}
