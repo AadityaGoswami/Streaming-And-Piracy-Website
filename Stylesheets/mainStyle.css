@@ -484,8 +484,10 @@ body.loaded #nav5 {
 .footerCell {
     position: relative;
     padding: 0 0;
-    margin: 0 16%;
+    margin: 0 12.5%;
 }
+
+/* footerCell Margin edited to accomodate ReadMe Cell */
 
 .footerCell p {
     margin: 0 0;
